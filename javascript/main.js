@@ -8,6 +8,8 @@ let novoContato = '';
 
 showForm.addEventListener('click', function (e) {
 
+
+
     function closeForm() {
 
         if (formIsEnable == true) {
@@ -28,8 +30,6 @@ addContact.addEventListener('submit', function (e) {
 
     let texto = `<tr><td>${camposFormulario[0].value}</td><td>${camposFormulario[1].value}</td><td>${camposFormulario[2].value}</td></tr>`
     novoContato += texto;
-    contatos.push(texto);
-    console.log(contatos)
     formTBody.innerHTML = novoContato;
 
 })
