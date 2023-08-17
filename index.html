@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./css/styles.css">
+        <title>Agenda de contatos</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>Agenda</h1>
+                <a href="#" id="show-form">+</a>
+            </div>
+
+        </header>
+        <div class="container">
+            <form id="add-contact">
+                <input type="text" required placeholder="Nome">
+                <input type="number" required placeholder="Telefone">
+                <input type="email" required placeholder="E-mail">
+                <div>
+                    <button type="reset">Limpar</button>
+                    <button type="submit">Cadastrar</button>
+                </div>
+
+            </form>
+        </div>
+
+        <div class="container">
+            <table cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>
+                            Nome
+                        </th>
+                        <th>
+                            Telefone
+                        </th>
+                        <th>
+                            E-mail
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="empty-cell" colspan="3">
+                            <h2>Nenhum contato adicionado.</h2>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+        </div>
+
+        <script src="./javascript/main.js"></script>
+
+    </body>
+</html>
